@@ -1,0 +1,20 @@
+
+<div *ngFor="let companys of companyinfo">
+    <div class="row mb-2" >
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">{{companys.name}}</strong>
+              <p class="card-text mb-auto">{{companys.description}}</p>
+              <p class="mb-0"> Numbers of Plane Available:- {{companys.quantity}}</p>
+              <a routerLink="/company" >see company planes in details</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img card-img-top" width="100%" [src]="companys.imageUrl">
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+

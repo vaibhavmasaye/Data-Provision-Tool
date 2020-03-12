@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-10">
+      <div class="container fu"> <br>
+        <div class="row" *ngFor="let product of productList" >
+        <!-- <div class="row" *ngFor="let plandetail of companydetails" > -->
+<app-company1 [productItem]="product"></app-company1>
+        </div>
+      </div><br>
+    </div>
+    <div class="col-sm-2"><br>
+      <app-cart></app-cart>
+    </div>
+  </div>
+
+  
+       
+  
+  
+
+
+

@@ -1,0 +1,49 @@
+        <div class="row">
+          <div class="col-sm-3">
+            <p><strong> Pack / Plan </strong><br>{{productItem.planename}}</p>
+          </div>
+          <div class="col-sm-3"> 
+            <p><strong>Project 2</strong><br> {{productItem.description}}</p>    
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+             <p> <strong>Price (Rs.)</strong><br>{{productItem.price | currency:'INR'}}</p>
+            </div>
+            <div class="well">
+             <p><strong>Validity  </strong><br> {{productItem.validity }} </p>
+            </div>
+          </div>
+          <div class="col-sm-3"> 
+            <button type="button"
+             class="btn btn-sm btn-outline-secondary product-btn"
+             (click)="handleAddToCart()"
+             >Subscription</button>   
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-sm-3">
+            <p><strong> Pack / Plan </strong><br></p>
+          </div>
+          <div class="col-sm-3"> 
+            <p><strong>Project 2</strong><br></p>    
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+             <p> <strong>Price (Rs.)</strong><br></p>
+            </div>
+            <div class="well">
+             <p><strong>Validity {{ 254 | currency:'INR'}} </strong><br> </p>
+            </div>
+          </div>
+          <div class="col-sm-3"> 
+            <button type="button"
+             class="btn btn-sm btn-outline-secondary product-btn">Subscription</button>   
+          </div>
+        </div>
+         -->
+
+
+
+     
+
